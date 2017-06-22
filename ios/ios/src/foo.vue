@@ -1,27 +1,20 @@
 <template>
-  <div class="wrapper" @click="update">
-    <image :src="logoUrl" class="logo"></image>
-    <text class="title">Hello {{target}}</text>
-    <text class="title">我爱岳丽雯！</text>
+  <div>
+    <text class="text">{{text}}</text>
   </div>
 </template>
 
 <style>
-  .wrapper { align-items: center; margin-top: 120px; }
-  .title { font-size: 48px; }
-  .logo { width: 360px; height: 82px; }
+  .text {
+    font-size: 50;
+  }
 </style>
 
 <script>
   export default {
-    data: {
-      logoUrl: 'https://alibaba.github.io/weex/img/weex_logo_blue@3x.png',
-      target: 'World'
-    },
-    methods: {
-      update: function (e) {
-        this.target = '我爱岳丽雯！'
-        console.log('target:', this.target)
+    data () {
+      return {
+        text: 'Hello World.'
       }
     }
   }
