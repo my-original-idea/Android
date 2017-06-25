@@ -10,9 +10,10 @@ export default new Vue(foo);
 //
 // Vue.config.productionTip = false
 //
+
 // export default new Vue({
 //   el: '#root',
 //   // router,
-//   // template: '<foo/>',
+//   // template: '<foo/>',//不支持template weex
 //   components: { foo }
 // })
